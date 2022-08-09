@@ -17,18 +17,19 @@ function closePopUp(){
 var zoneTutorial = "tutorial";
 var zoneFeedback = "feedback";
 var zoneMusik = "musik";
+var zoneJazz= "jazz";
 
 WA.room.onEnterZone(zoneTutorial, () => {
-WA.nav.goToPage('https://dbsw.sharepoint.com/');
- //  currentPopup =  WA.ui.openPopup("popUpTutorial","Tutorial ansehen?",[
- //       {
- //           label: "OK",
- //           callback: (popup => {
- //               WA.nav.openTab(urlTutorial);
- //               isCoWebSiteOpened = true;
- //               closePopUp();
- //           })
- //       }]);
+
+   currentPopup =  WA.ui.openPopup("popUpTutorial","Tutorial ansehen?",[
+        {
+           label: "OK",
+           callback: (popup => {
+              WA.nav.openTab(urlTutorial);
+               isCoWebSiteOpened = true;
+               closePopUp();
+            })
+        }]);
 })
 
 WA.room.onLeaveZone(zoneTutorial, () =>{
@@ -80,4 +81,9 @@ WA.room.onLeaveZone(zoneMusik, () =>{
         WA.nav.closeCoWebSite();
         isCoWebSiteOpened = false;
     }
+})
+
+WA.room.onEnterZone(zoneJazz, () => {
+
+  WA.nav.goToPage('https://db-planet.deutschebahn.com/pages/a475bb3f-2a33-4853-a416-289c3c7983c0/apps/content/850945ae-d500-4891-907e-1c92c75ba702');
 })
