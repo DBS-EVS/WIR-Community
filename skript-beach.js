@@ -19,15 +19,16 @@ var zoneFeedback = "feedback";
 var zoneMusik = "musik";
 
 WA.room.onEnterZone(zoneTutorial, () => {
-   currentPopup =  WA.ui.openPopup("popUpTutorial","Tutorial ansehen?",[
-        {
-            label: "OK",
-            callback: (popup => {
-                WA.nav.openTab(urlTutorial);
-                isCoWebSiteOpened = true;
-                closePopUp();
-            })
-        }]);
+WA.nav.goToPage('https://dbsw.sharepoint.com/');
+ //  currentPopup =  WA.ui.openPopup("popUpTutorial","Tutorial ansehen?",[
+ //       {
+ //           label: "OK",
+ //           callback: (popup => {
+ //               WA.nav.openTab(urlTutorial);
+ //               isCoWebSiteOpened = true;
+ //               closePopUp();
+ //           })
+ //       }]);
 })
 
 WA.room.onLeaveZone(zoneTutorial, () =>{
