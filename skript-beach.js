@@ -85,5 +85,5 @@ WA.room.onLeaveZone(zoneMusik, () =>{
 
 WA.room.onEnterZone(zoneJazz, () => {
 
-  WA.nav.goToPage('httpshttps://db.de/wirtuelles-event');
+  WA.nav.goToPage('https://db.de/wirtuelles-event');
 })
