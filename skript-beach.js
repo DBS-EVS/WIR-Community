@@ -85,5 +85,5 @@ WA.room.onLeaveZone(zoneMusik, () =>{
 
 WA.room.onEnterZone(zoneJazz, () => {
 
-  WA.nav.goToPage('https://db-planet.deutschebahn.com/pages/a475bb3f-2a33-4853-a416-289c3c7983c0/apps/content/850945ae-d500-4891-907e-1c92c75ba702');
+  WA.nav.goToPage("https://db.de/wirtuelles-event");
 })
